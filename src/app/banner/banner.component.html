@@ -1,0 +1,16 @@
+<div class="title">Dibujos</div>
+<div class="carrusel">
+    <div class="carrusel__container">
+        <div class="carrusel-item" *ngFor = 'let item of images'>
+            <img class="carrusel-item__img" [src]="item.link" alt="name">
+            <div class="carrusel-item__details">
+                <div class="carrusel-item__details--icons">
+                    <img src="../../assets/images/icons8-me-gusta-64.png" alt="">
+                    <img src="../../assets/images/icons8-flecha-adelante-64.png" alt="">
+                </div>
+                <p class="carrusel-item__details--title">{{ item.title }}</p>
+                <p class="carrusel-item__details--date"> {{item.date}} </p>
+            </div>
+        </div>
+    </div>
+</div>

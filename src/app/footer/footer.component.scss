@@ -1,0 +1,57 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100px;
+    margin: 0px 20px;
+}
+.contacto{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contacto div{
+    display: flex;
+    align-items: center;
+}
+.facebook-link a{
+    text-decoration: none;
+    color: white;
+}
+.facebook-link a:hover{
+    text-decoration: underline;
+}
+.instagram-link a{
+    text-decoration: none;
+    color: white;
+}
+.instagram-link a:hover{
+    text-decoration: underline;
+}
+.facebook-icon{
+    height: 20px;
+}
+.instagram-icon{
+    height: 20px;
+}
+.about { 
+    position: relative;
+    top: 10px;
+}
+.about a{
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+}
+.about a:hover{
+    text-decoration: underline;
+}
+@media only screen and (max-width: 300px){
+    .footer { 
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+} 
