@@ -1,0 +1,16 @@
+<div class="carrusel">
+    <div class="carrusel__container">
+        <div class="carrusel-item" *ngFor = 'let item of items'>
+            <img class="carrusel-item__img" [src]="item.link" alt="name" *ngIf="item.show">
+            <p class="default" *ngIf="!item.show">{{ item.title }}</p>
+            <div class="carrusel-item__details">
+                <div class="carrusel-item__details--icons">
+                    <img src="https://img.icons8.com/cotton/64/000000/like.png" *ngIf="item.show"/>
+                    <img src="https://img.icons8.com/nolan/64/forward-arrow.png" *ngIf="item.show"/>
+                </div>
+                <p class="carrusel-item__details--title" *ngIf="item.show">{{ item.title }}</p>
+                <p class="carrusel-item__details--date" *ngIf="item.show"> {{item.date}} </p>
+            </div>
+        </div>
+    </div>
+</div>
