@@ -1,4 +1,3 @@
-import { CloneVisitor } from '@angular/compiler/src/i18n/i18n_ast';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

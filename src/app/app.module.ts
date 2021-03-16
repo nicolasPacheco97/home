@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FeedbackComponent } from './feedback/feedback.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
 import { BannerComponent } from './shared/banner/banner.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { DrawingComponent } from './drawing/drawing.component';
+import { LayoutComponent } from './layout/layout.component';
+import { FormComponent } from './shared/form/form.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { DrawingComponent } from './drawing/drawing.component';
     FooterComponent,
     BannerComponent,
     DocumentsComponent,
-    DrawingComponent
+    DrawingComponent,
+    LayoutComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,62 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 20px 0px 20px;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo img{
+    height: 60px;
+    width: 60px;
+    position: relative;
+}
+.logo p{
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    margin: 0 20px;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    img{
+        height: 25px;
+        padding: 0px 5px;
+    }
+}
+.active{
+    background: linear-gradient(to top, rgba(64,224,208,0.3) 0%, rgba(64,224,208,0) 100%);
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .icon{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 5px;
+    }
+    .icon .conteiner{
+        width: 25%;
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        margin-bottom: 10px;
+    }
+    .active{
+        background: linear-gradient(to top, rgba(64,224,208,0.3) 0%, rgba(64,224,208,0) 100%);
+        border-radius: 10px;
+    }
+    .conteiner a{
+        padding: 0% 30%;
+    }
+}

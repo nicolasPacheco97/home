@@ -11,6 +11,18 @@ export class DrawingComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  itemUrl: string;
+  showImage: boolean;
+  itemTitle: string;
+  itemDescription: string;
+
+  eventImage(item: any){
+    console.log(item);
+    this.itemUrl = item.link;
+    this.showImage = item.show;
+    this.itemTitle = item.title;
+    this.itemDescription = item.description;
+  }
 
   images = [
     {
@@ -84,6 +96,5 @@ export class DrawingComponent implements OnInit {
       date: '2020 01 01',
       description: 'Un traje creado como vista a la moda',
       show: true
-    },
-  ];
+    }];
 }

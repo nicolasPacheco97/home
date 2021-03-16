@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-banner',
@@ -10,7 +10,14 @@ export class BannerComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log('holi');
   }
 
   @Input() items: any;
+  @Output() loadImageOut = new EventEmitter<any>();
+
+  loadImage(item){
+    console.log('press', item);
+    this.loadImageOut.emit(item);
+  }
 }

@@ -1,1 +1,11 @@
-<app-banner [items]="images"></app-banner>
+<app-banner [items]="images" (loadImageOut)="eventImage($event)"></app-banner>
+<div class="conteiner">
+    <div class="conteiner__image">
+        <img [src]="itemUrl" alt="image" class="conteiner__image-id" *ngIf="showImage">
+    </div>
+    <div class="conteiner__description">
+        <p class="title">{{itemTitle}}</p>
+        <p class="description">{{itemDescription}}</p>
+    </div>
+</div>
+
