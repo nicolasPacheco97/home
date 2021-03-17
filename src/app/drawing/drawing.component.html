@@ -2,10 +2,12 @@
 <div class="conteiner">
     <div class="conteiner__image">
         <img [src]="itemUrl" alt="image" class="conteiner__image-id" *ngIf="showImage">
+        <img src="/assets/images/lupa.png" alt="lupa" class="default__image" *ngIf="!showImage">
+        <p class="default__content" *ngIf="!showImage">Dibujo no seleccionado</p>
     </div>
     <div class="conteiner__description">
-        <p class="title">{{itemTitle}}</p>
-        <p class="description">{{itemDescription}}</p>
+        <p class="title" *ngIf="showImage">{{itemTitle}}</p>
+        <p class="description" *ngIf="showImage">{{itemDescription}}</p>
     </div>
 </div>
 

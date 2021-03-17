@@ -9,9 +9,18 @@ export class DocumentsComponent implements OnInit {
 
   constructor() { }
 
+  documentName: string;
+  showDocument: boolean;
+  itemUrl: string;
   ngOnInit(): void {
   }
 
+  eventDocuemnt(document)
+  {
+    this.documentName = document.title;
+    this.showDocument = document.show;
+    this.itemUrl = document.link;
+  }
   documents = [
     {
       id: '0',

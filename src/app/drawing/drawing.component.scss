@@ -6,15 +6,27 @@
     margin: 20px 40px;
     border-radius: 20px;
     box-shadow: 10px 20px 8px black;
+    justify-content: center;
 }
 .conteiner__image{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 .conteiner__image-id{
-    margin: 20px;
+    margin: 20px 20px 0px 20px;
     max-width: 90%;
+    height: auto;
     border-radius: 20px;
+}
+.default__image{
+    margin: 0px;
+    max-width: 30%;
+}
+.default__content{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
 }
 .conteiner__description{
     margin: 20px;
@@ -22,6 +34,7 @@
     .title{
         font-family: 'Lobster', cursive;
         font-size: 30px;
+        margin: 10px;
     }
 
     .description{

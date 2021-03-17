@@ -13,6 +13,7 @@ import { DocumentsComponent } from './documents/documents.component';
 import { DrawingComponent } from './drawing/drawing.component';
 import { LayoutComponent } from './layout/layout.component';
 import { FormComponent } from './shared/form/form.component';
+import { InformationComponent } from './information/information.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FormComponent } from './shared/form/form.component';
     DocumentsComponent,
     DrawingComponent,
     LayoutComponent,
-    FormComponent
+    FormComponent,
+    InformationComponent
   ],
   imports: [
     BrowserModule,

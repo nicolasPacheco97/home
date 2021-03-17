@@ -1,0 +1,70 @@
+.conteiner{
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+}
+.conteiner_information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.aside__information{
+    background-color: darkslategray;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 10px 20px 8px black;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    height: 100%;
+    min-width: 25%;
+    position: sticky;
+    top: 20px;
+    p{
+        margin: 10px 0px 0px 20px;
+        font-size: 20px;
+        font-family: 'Lobster', cursive;
+    }
+    .indice{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        a{
+            text-decoration: none;
+            font-family: 'Ubuntu', sans-serif;
+            color: white;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.cv__photo{
+    width: 30%;
+    border-radius: 50%;
+}
+.name{
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    margin: 10px 0 0 0;
+}
+.degree{
+    margin: 10px 0 0 0;
+    padding: 10px 30px;
+    letter-spacing: 1px;
+    background-color: turquoise;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.objetivo{
+    margin: 20px 40px;
+    font-family: 'Ubuntu', sans-serif;
+    .objetivo-title{
+        font-size: 18px;
+    }
+    .objetivo-content{
+        font-style: italic;
+    }
+}

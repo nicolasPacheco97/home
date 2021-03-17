@@ -12,7 +12,7 @@ export class DrawingComponent implements OnInit {
   ngOnInit(): void {
   }
   itemUrl: string;
-  showImage: boolean;
+  showImage: boolean = false;
   itemTitle: string;
   itemDescription: string;
 
