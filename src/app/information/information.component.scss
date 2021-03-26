@@ -1,48 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 .conteiner{
     margin: 20px 0px;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
 }
 .conteiner_information{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     font-family: 'Ubuntu', sans-serif;
-}
-.aside__information{
-    background-color: darkslategray;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 10px 20px 8px black;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    height: 100%;
-    min-width: 25%;
-    position: sticky;
-    top: 20px;
-    p{
-        margin: 10px 0px 0px 20px;
-        font-size: 20px;
-        font-family: 'Lobster', cursive;
-    }
-    .indice{
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        a{
-            text-decoration: none;
-            font-family: 'Ubuntu', sans-serif;
-            color: white;
-        }
-        a:hover{
-            text-decoration: underline;
-        }
-    }
+    margin: 0px 30px;
 }
 .cv__photo{
     width: 30%;
     border-radius: 50%;
+    margin-top: 30px;
 }
 .name{
     font-size: 30px;
@@ -50,21 +23,47 @@
     margin: 10px 0 0 0;
 }
 .degree{
+    display: flex;
+    justify-content: center;
+    min-width: 232px;
     margin: 10px 0 0 0;
-    padding: 10px 30px;
+    padding: 10px 10px;
     letter-spacing: 1px;
     background-color: turquoise;
     border-radius: 10px;
     font-weight: bold;
     font-size: 20px;
+    p {
+        margin: 0px;
+        font-family: 'Oswald', sans-serif;
+    }
+
 }
 .objetivo{
-    margin: 20px 40px;
-    font-family: 'Ubuntu', sans-serif;
+    margin: 20px 10px;
+    font-family: 'Oswald', sans-serif;
     .objetivo-title{
-        font-size: 18px;
+        font-size: 25px;
     }
     .objetivo-content{
-        font-style: italic;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 620px){
+    .conteiner_information{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Ubuntu', sans-serif;
+        margin: 0px 30px;
+    }
+    .cv__photo{
+        width: 160px
+    }
+    .objetivo{
+        .objetivo-content{
+            font-size: 18px;
+        }
     }
 }

@@ -15,6 +15,7 @@ export class DrawingComponent implements OnInit {
   showImage: boolean = false;
   itemTitle: string;
   itemDescription: string;
+  view: string = 'image';
 
   eventImage(item: any){
     console.log(item);
@@ -25,14 +26,6 @@ export class DrawingComponent implements OnInit {
   }
 
   images = [
-    {
-      id: '0',
-      link: '',
-      title: 'Dibujos',
-      date: '',
-      description: '',
-      show: false
-    },
     {
       id: '1',
       link: 'assets/images/Traje-XL.png',

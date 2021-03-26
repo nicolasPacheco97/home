@@ -9,11 +9,17 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { BannerComponent } from './shared/banner/banner.component';
-import { DocumentsComponent } from './documents/documents.component';
 import { DrawingComponent } from './drawing/drawing.component';
 import { LayoutComponent } from './layout/layout.component';
 import { FormComponent } from './shared/form/form.component';
 import { InformationComponent } from './information/information.component';
+import { SecondaryInfComponent } from './secondary-inf/secondary-inf.component';
+import { ExpProfesionalComponent } from './exp-profesional/exp-profesional.component';
+import { ExpAcademicaComponent } from './exp-academica/exp-academica.component';
+import { ProyectsComponent } from './proyects/proyects.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 @NgModule({
   declarations: [
@@ -23,16 +29,22 @@ import { InformationComponent } from './information/information.component';
     HeaderComponent,
     FooterComponent,
     BannerComponent,
-    DocumentsComponent,
     DrawingComponent,
     LayoutComponent,
     FormComponent,
-    InformationComponent
+    InformationComponent,
+    SecondaryInfComponent,
+    ExpProfesionalComponent,
+    ExpAcademicaComponent,
+    ProyectsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    MDBBootstrapModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

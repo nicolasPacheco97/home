@@ -5,13 +5,31 @@
             <p class="default" *ngIf="!item.show">{{ item.title }}</p>
             <div class="carrusel-item__details">
                 <div class="carrusel-item__details--icons">
-                    <img src="https://img.icons8.com/emoji/48/000000/magnifying-glass-tilted-left-emoji.png" *ngIf="item.show" (click)="loadImage(item)"/>
-                    <img src="https://img.icons8.com/cotton/64/000000/like.png" *ngIf="item.show"/>
-                    <img src="https://img.icons8.com/fluent/48/000000/download.png" *ngIf="item.show"/>
+                    <img src="https://img.icons8.com/emoji/48/000000/magnifying-glass-tilted-left-emoji.png" *ngIf="item.show && view=='image'" (click)="loadImage(item)"/>
+                    <img src="https://img.icons8.com/cotton/64/000000/like.png" *ngIf="item.show && view=='image'"/>
+                    <img src="https://img.icons8.com/fluent/48/000000/download.png" *ngIf="item.show && view=='image'"/>
+                    <img src="https://img.icons8.com/color/48/000000/visible--v1.png" *ngIf="item.show && view=='exp'" (click)="eyePush(item)" />
                 </div>
                 <p class="carrusel-item__details--title" *ngIf="item.show">{{ item.title }}</p>
                 <p class="carrusel-item__details--date" *ngIf="item.show"> {{ item.date }} </p>
             </div>
         </div>
     </div>
+</div>
+
+<!--Modal-->
+<div mdbModal #frame="mdbModal" class="modal fade" id="frameModalTop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true" >
+  <div class="modal-dialog justify-content-center" >
+    <div class="modal-content">
+      <div class="modal-body mb-0 p-0">
+        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+          <img class="embed-responsive-item img-content" [src]="itemUrl" allowfullscreen>
+        </div>
+        <div>Aqui puede ir el texto</div>
+      </div>
+        <button type="button" mdbBtn color="primary" class="ml-4 waves-light" mdbWavesEffect data-dismiss="modal"
+          (click)="frame.hide()">Close</button>
+    </div>
+  </div>
 </div>

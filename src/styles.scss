@@ -2,9 +2,12 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: linear-gradient( #013646 0%, black 100%);
+    background: #d8ebe4;
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
-    color: white;
+    color: #282846;
     min-height: 100vh;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
